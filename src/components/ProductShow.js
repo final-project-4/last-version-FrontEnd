@@ -35,6 +35,7 @@ const ProductShow = props => {
                  <button onClick={() => {props.deleteShow(props.activeShow.id)}}>Delete</button>
                  {/* <button onClick={() => {props.deleteProduct(props.activeProduct.id)}}>Delete</button> */}
                  {/* <button onClick={() => {props.deleteProduct(props.toggleModal.id)}}>Delete</button> */}
+                 {/* <div>  <ConversationsList /></div> */}
                </div>
              </div>
            </div>

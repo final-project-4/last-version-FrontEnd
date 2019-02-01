@@ -118,9 +118,9 @@ class App extends Component {
 
   handleSubmit(product) {
     if (this.state.activeProduct) {
-    this.updateProduct(product);
+      this.updateProduct(product);
     } else {
-    this.createNewProduct(product)
+      this.createNewProduct(product)
     }
   }
 
@@ -216,8 +216,8 @@ class App extends Component {
             toggleModal={this.toggleModal.bind(this)}
             deleteProduct={this.deleteProduct.bind(this)}
           /> : ''}
+        <div><ConversationsList /></div>
 
-        <ConversationsList />
       </div>
     );
   }

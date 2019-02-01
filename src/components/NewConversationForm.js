@@ -21,15 +21,15 @@ class NewConversationForm extends React.Component {
     this.setState({ title: '' });
   };
 // Jumanah doing the delete method for the conversation
-  handeleDelete = d =>{
-    d.preventDefault()
-    fetch(`${API_ROOT}/conversations/${id}`, {
-      method: 'DELETE',
-      headers: HEADERS,
-      body: JSON.stringify(this.state)
-    });
-    this.setState({results:[]});
-  }
+  // handeleDelete = d =>{
+  //   d.preventDefault()
+  //   fetch(`${API_ROOT}/conversations/${id}`, {
+  //     method: 'DELETE',
+  //     headers: HEADERS,
+  //     body: JSON.stringify(this.state)
+  //   });
+  //   this.setState({results:[]});
+  // }
  // add the delete method here and the update method here as well 
  // also in the backend we should do that 
   render = () => {
