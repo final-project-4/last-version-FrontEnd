@@ -10,14 +10,14 @@ const ProductShow = props => {
            props.setCurrentProduct(null);
          }}
        >
-         back
+         <button>back</button>
        </div>
        <div className="container">
          <div className="Product">
            <div>
            <h2>{props.activeProduct.name}</h2>
            <img src={props.activeProduct.image} alt="" />
-             <h4>Rating:<br></br>{props.activeProduct.rating} / 5 ✭</h4>
+             {/* <h4>Rating:<br></br>{props.activeProduct.rating} / 5 ✭</h4> */}
            </div>
            <div>
              <div className="Product-details">
@@ -32,7 +32,7 @@ const ProductShow = props => {
                <div className="Product-buttons">
                  <button onClick={() => {props.toggleModal(props.activeProduct)}}>Edit</button>
 
-                 <button onClick={() => {props.deleteShow(props.activeShow.id)}}>Delete</button>
+                 <button onClick={() => {props.deleteProduct(props.activeProduct.id)}}>Delete</button>
                  {/* <button onClick={() => {props.deleteProduct(props.activeProduct.id)}}>Delete</button> */}
                  {/* <button onClick={() => {props.deleteProduct(props.toggleModal.id)}}>Delete</button> */}
                  {/* <div>  <ConversationsList /></div> */}
