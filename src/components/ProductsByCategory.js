@@ -1,15 +1,15 @@
 import React from 'react';
 
 
-const Tile = (props)=> {
+const ProductsByCategory = (props)=> {
 
-   return(
+  return(
 
 
-       <div className="tile" onClick={() => {
-           console.log("click")
-           props.renderProduct(props.product)}
-       }>
+      <div className="tile" onClick={() => {
+          console.log("click")
+          props.renderProduct(props.product)}
+      }>
 
 {/* // <h2>{props.product.rating}</h2>
 <h2>{props.product.brand}</h2>
@@ -21,9 +21,9 @@ const Tile = (props)=> {
 <h2>{props.product.name}</h2>
 
 {/* <h2>{props.category.name}</h2> */}
-         </div>
-   )
+        </div>
+  )
 
 }
 
-export default Tile;
+export default ProductsByCategory;
